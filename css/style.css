@@ -1,4 +1,3 @@
-/* === Base Setup === */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@500&display=swap');
 
 * {
@@ -9,8 +8,8 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #FDF6F0;
-  color: #4A4A4A;
+  background-color: #FFF6F4; /* soft blush */
+  color: #4A3C3A; /* warm earthy brown */
   padding: 2rem 1rem;
   line-height: 1.8;
 }
@@ -20,15 +19,15 @@ main {
   margin: 0 auto;
 }
 
-/* === Typography === */
+/* Typography */
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
-  color: #3D3D3D;
+  color: #6C4E4B; /* soft clay brown */
   margin-bottom: 1rem;
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   margin-top: 2rem;
 }
 
@@ -47,7 +46,7 @@ ul {
 }
 
 a {
-  color: #B8777D;
+  color: #D18395; /* dusty rose */
   text-decoration: none;
   font-weight: 500;
 }
@@ -56,13 +55,13 @@ a:hover {
   text-decoration: underline;
 }
 
-/* === Layout === */
+/* Layout */
 section {
   margin-bottom: 3rem;
   padding: 1.5rem;
   background-color: #FFFFFF;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.6s ease-in-out forwards;
@@ -85,10 +84,10 @@ footer {
   text-align: center;
   margin-top: 2rem;
   font-size: 0.9rem;
-  color: #7A7A7A;
+  color: #8C7B78;
 }
 
-/* === Profile Image (Optional) === */
+/* Optional Profile Image */
 .profile-pic {
   display: block;
   margin: 0 auto 1rem auto;
@@ -96,19 +95,19 @@ footer {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
-/* === Quote or Signature === */
+/* Decorative / Quotes */
 .signature {
   text-align: center;
   font-style: italic;
-  color: #7A7A7A;
+  color: #8A6D6A;
   margin-top: 3rem;
 }
 
-/* === Section Dividers === */
+/* Dividers */
 .divider {
-  border-bottom: 1px dotted #D8C0B2;
+  border-bottom: 1px dashed #E4CAC6;
   margin: 2rem 0;
 }
