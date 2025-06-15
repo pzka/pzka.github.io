@@ -1,1 +1,68 @@
-/* Custom styles go here */
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fdfaf6; /* soft almond */
+  color: #3d3d3d; /* gentle charcoal */
+  line-height: 1.7;
+  padding: 2rem;
+  max-width: 720px;
+  margin: auto;
+}
+
+/* Headers */
+h1, h2 {
+  color: #91384f; /* rosewood pink */
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 1.8rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+
+/* Lists */
+ul {
+  margin-left: 1.2rem;
+  padding-left: 1rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
+}
+
+/* Links */
+a {
+  color: #a85572; /* muted pink */
+  text-decoration: none;
+  border-bottom: 1px dashed #a85572;
+}
+
+a:hover {
+  color: #91384f;
+  border-bottom: 1px solid #91384f;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
