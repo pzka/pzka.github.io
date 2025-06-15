@@ -1,68 +1,114 @@
-/* Base Reset */
+/* === Base Setup === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@500&display=swap');
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  background-color: #fdfaf6; /* soft almond */
-  color: #3d3d3d; /* gentle charcoal */
-  line-height: 1.7;
-  padding: 2rem;
-  max-width: 720px;
-  margin: auto;
+  font-family: 'Inter', sans-serif;
+  background-color: #FDF6F0;
+  color: #4A4A4A;
+  padding: 2rem 1rem;
+  line-height: 1.8;
 }
 
-/* Headers */
-h1, h2 {
-  color: #91384f; /* rosewood pink */
-  margin-bottom: 0.5rem;
+main {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* === Typography === */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #3D3D3D;
+  margin-bottom: 1rem;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-top: 2rem;
 }
 
 h2 {
-  font-size: 1.4rem;
-  margin-top: 1.8rem;
+  font-size: 1.6rem;
+  margin-top: 2rem;
 }
 
-/* Paragraphs */
-p {
-  margin-bottom: 1.2rem;
+p, li {
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
-/* Lists */
 ul {
-  margin-left: 1.2rem;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
-li {
-  margin-bottom: 0.8rem;
-}
-
-/* Links */
 a {
-  color: #a85572; /* muted pink */
+  color: #B8777D;
   text-decoration: none;
-  border-bottom: 1px dashed #a85572;
+  font-weight: 500;
 }
 
 a:hover {
-  color: #91384f;
-  border-bottom: 1px solid #91384f;
+  text-decoration: underline;
 }
 
-/* Footer */
-footer {
-  margin-top: 3rem;
+/* === Layout === */
+section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header {
   text-align: center;
+  margin-bottom: 3rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
   font-size: 0.9rem;
-  color: #888;
+  color: #7A7A7A;
+}
+
+/* === Profile Image (Optional) === */
+.profile-pic {
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* === Quote or Signature === */
+.signature {
+  text-align: center;
+  font-style: italic;
+  color: #7A7A7A;
+  margin-top: 3rem;
+}
+
+/* === Section Dividers === */
+.divider {
+  border-bottom: 1px dotted #D8C0B2;
+  margin: 2rem 0;
 }
