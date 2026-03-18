@@ -28,32 +28,25 @@ import AvailableForWork from "../components/available.astro";
 				<!-- TOP: Your Name + Identity -->
 				<div>
 					<H1 size="large">
-						Josia Paska Darmawan is a <br /> Strategist
+						Josia Paska Darmawan is an <br /> Impact Strategist
 					</H1>
-					<p class="mt-4 max-w-md text-sm sm:text-base text-zinc-300">
-						Researcher and knowledge strategist working on digital inclusion, 
-						AI, and impact systems. I translate complex ideas into meaningful, 
-						real-world change.
-					</p>
 				</div>
 
 				<!-- BOTTOM: Actions -->
 				<div>
-					<AvailableForWork className="py-4" />
+					<p class="py-4 text-sm opacity-70 max-w-md">
+ 					 <span class="italic">(n.) Impact Strategist</span>: A person who maps complexity, 
+					identifies leverage points, and turns ideas into systems that create real-world impact.
+					</p>
 
 					<div class="mb-2 sm:mb-4 flex items-center justify-between">
 						
 						<div class="flex items-center gap-4">
-							<Link href="#" >Work with me</Link>
-							<Link href="/projects" variant="secondary">Portfolio</Link>
-							<Link href="/news" variant="secondary">News</Link>
+							<Link href="/contact" >Work with me</Link>
+							<Link href="/about" variant="secondary">About me</Link>
+							<Link href="/projects" variant="secondary">What I do</Link>
+							<Link href="/news" variant="secondary">Latest events</Link>
 						</div>
-
-						<Navigation client:load>
-							<Link href="/about" variant="secondary">About</Link>
-							<Link href="/contact" variant="secondary">Contact</Link>
-						</Navigation>
-
 					</div>
 				</div>
 
