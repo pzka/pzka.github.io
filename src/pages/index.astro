@@ -24,25 +24,39 @@ import AvailableForWork from "../components/available.astro";
 			</div>
 
 			<div class="p-4 sm:p-8 absolute w-full h-dvh flex flex-col justify-between z-10">
+				
+				<!-- TOP: Your Name + Identity -->
 				<div>
-					<H1 size="large"> Nikola <br /> Tesla </H1>
+					<H1 size="large">
+						Josia Paska Darmawan is a <br /> Strategist
+					</H1>
+					<p class="mt-4 max-w-md text-sm sm:text-base text-zinc-300">
+						Researcher and knowledge strategist working on digital inclusion, 
+						AI, and impact systems. I translate complex ideas into meaningful, 
+						real-world change.
+					</p>
 				</div>
 
+				<!-- BOTTOM: Actions -->
 				<div>
 					<AvailableForWork className="py-4" />
+
 					<div class="mb-2 sm:mb-4 flex items-center justify-between">
+						
 						<div class="flex items-center gap-4">
-							<Link href="#">Book a call</Link>
-							<Link href="/projects" variant="secondary">View recent work</Link>
+							<Link href="#" >Work with me</Link>
+							<Link href="/projects" variant="secondary">Portfolio</Link>
+							<Link href="/news" variant="secondary">News</Link>
 						</div>
 
 						<Navigation client:load>
-							<Link href="/blog" variant="secondary">Blog</Link>
 							<Link href="/about" variant="secondary">About</Link>
 							<Link href="/contact" variant="secondary">Contact</Link>
 						</Navigation>
+
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</main>
