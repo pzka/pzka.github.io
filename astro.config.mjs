@@ -4,11 +4,10 @@ import { defineConfig, fontProviders } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@astrojs/react';
 
-import vercel from "@astrojs/vercel";
-
 // https://astro.build/config
 export default defineConfig({
-   output: 'static',
+  output: 'static',
+
   vite: {
     plugins: [tailwindcss()]
   },
@@ -22,7 +21,7 @@ export default defineConfig({
       cssVariable: "--font-geist",
       fallbacks: ["Inter", "sans-serif"],
     }]
-  },
+  }
 
-  adapter: vercel()
+  // ❌ removed Vercel adapter (this was breaking everything)
 });
